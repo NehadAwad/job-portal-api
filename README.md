@@ -25,3 +25,8 @@ Migrate database :
 ```bash
 php artisan migrate
 ```
+
+Run project :
+```bash
+php artisan serve
+```
