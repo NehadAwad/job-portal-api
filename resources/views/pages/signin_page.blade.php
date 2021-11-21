@@ -19,7 +19,7 @@
         <h1>Admin Panel (Assignment)</h1>
     </div>
     <div class="login-box">
-        <form class="login-form" action="{{route('sign.in')}}" method="post">@csrf
+        <form class="login-form" action="" method="post">@csrf
             <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
             <div class="form-group">
                 <label class="control-label">EMAIL</label>
