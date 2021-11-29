@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
-    public function userSignIn(){
-
+    public function userSignUp(): JsonResponse
+    {
+        return response()->json(['status' => 'success'], 200);
     }
+
 }
