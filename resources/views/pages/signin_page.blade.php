@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/main.css')}}">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Admin Panel - Assignment</title>
+    <title>Admin Panel</title>
 </head>
 <body>
 <section class="material-half-bg">
@@ -16,10 +16,10 @@
 </section>
 <section class="login-content">
     <div class="logo">
-        <h1>Admin Panel (Assignment)</h1>
+        <h1>Admin Panel</h1>
     </div>
     <div class="login-box">
-        <form class="login-form" action="" method="post">@csrf
+        <form class="login-form" action="{{ route('sign.in') }}" method="post">@csrf
             <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
             <div class="form-group">
                 <label class="control-label">EMAIL</label>

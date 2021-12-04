@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.signin_page');
-});
+
+
+// --------------- WEB ---------------------
+
+Route::get('/', [AuthController::class, 'authPage'])->name('login');
+Route::Post('/sign-in', [AuthController::class, 'signInAdmin'])->name('sign.in');
