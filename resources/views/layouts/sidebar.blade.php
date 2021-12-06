@@ -9,8 +9,8 @@
     <ul class="app-menu">
         <li><a class="app-menu__item active" href="{{route('dashboard')}}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
 
-        <li><a class="app-menu__item" href="{{route('job.list')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Job Posts</span></a></li>
-        <li><a class="app-menu__item" href="{{url('/add-new-job')}}"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Add Job Post</span></a></li>
-        <li><a class="app-menu__item" href="{{route('applicants')}}"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Applicants</span></a></li>
+        <li><a class="app-menu__item" href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Job Posts</span></a></li>
+        <li><a class="app-menu__item" href=""><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Add Job Post</span></a></li>
+        <li><a class="app-menu__item" href=""><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Applicants</span></a></li>
     </ul>
 </aside>

@@ -19,4 +19,11 @@ use Illuminate\Support\Facades\Route;
 // --------------- WEB ---------------------
 
 Route::get('/', [AuthController::class, 'authPage'])->name('login');
-Route::Post('/sign-in', [AuthController::class, 'signInAdmin'])->name('sign.in');
+Route::post('/sign-in', [AuthController::class, 'signInAdmin'])->name('sign.in');
+Route::get('sign-out', [AuthController::class, 'signOutAdmin'])->name('sign.out');
+
+Route::group(['middleware' => ['auth:sanctum']], function() {
+    Route::get('/home', function () {
+        return view('pages.dashboard');
+    })->name('dashboard');
+});

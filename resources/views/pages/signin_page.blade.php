@@ -17,6 +17,15 @@
 <section class="login-content">
     <div class="logo">
         <h1>Admin Panel</h1>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     </div>
     <div class="login-box">
         <form class="login-form" action="{{ route('sign.in') }}" method="post">@csrf
