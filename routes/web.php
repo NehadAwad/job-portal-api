@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\JobController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,7 +24,7 @@ Route::post('/sign-in', [AuthController::class, 'signInAdmin'])->name('sign.in')
 Route::get('sign-out', [AuthController::class, 'signOutAdmin'])->name('sign.out');
 
 Route::group(['middleware' => ['auth:sanctum']], function() {
-    Route::get('/home', function () {
-        return view('pages.dashboard');
-    })->name('dashboard');
+    Route::get('/home', [AuthController::class, 'dashboard'])->name('dashboard');
+    Route::get('/job-lists', [JobController::class, 'jobListPage'])->name('job.list');
+
 });

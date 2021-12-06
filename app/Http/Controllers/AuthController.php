@@ -12,6 +12,12 @@ class AuthController extends Controller
 {
 
     // ----------- WEB -----------
+
+    public function dashboard()
+    {
+        return view('pages.dashboard');
+    }
+
     public function signInAdmin(SignInRequestAdmin $request):  \Illuminate\Http\RedirectResponse
     {
         //dd('ok');
